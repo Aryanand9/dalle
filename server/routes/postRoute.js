@@ -32,9 +32,9 @@ router.route("/").post(async (req, res) => {
       prompt,
       photo: photoUrl.url,
     });
-    res.status(200).json({ sucess: true, data: newPost });
+    res.status(200).json({ success: true, data: newPost });
   } catch (error) {
-    res.status(500).json({ sucess: false, message: error });
+    res.status(500).json({ success: false, message: error });
   }
 });
 
